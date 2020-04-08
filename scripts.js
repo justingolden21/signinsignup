@@ -2,7 +2,7 @@ $( ()=> {
 	// ======== Focus Inputs ========
 
 	$('#login-tab').click( ()=> setTimeout( ()=> $('#login-email-input').focus(), 200) );
-	$('#signup-tab').click( ()=> setTimeout( ()=> $('#signup-name-input').focus(), 200) ).click();
+	$('#signup-tab').click( ()=> setTimeout( ()=> $('#signup-name-input').focus(), 200) );
 
 	// ======== Validation ========
 
