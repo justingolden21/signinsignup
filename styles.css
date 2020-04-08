@@ -1,0 +1,31 @@
+img, button, br, .nav-link {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	-ms-user-drag: none;
+	user-drag: none;
+}
+
+::-moz-selection {
+	background: #e9ecef; /* input-group background-color */
+}
+
+::selection {
+	background: #e9ecef; /* input-group background-color */
+}
+
+html, body {
+	height: 100%;
+}
+
+.row {
+	min-height: 100%;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Log In | Company Name</title>
+
+<meta charset="utf-8">
+<meta name="title=" content="Log In">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Login page for Company Name">
+<meta name="keywords" content="company name, company name login">
+<meta name="theme-color" content="#000">
+<meta name="msapplication-navbutton-color" content="#000">
+<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+<link rel="shortcut icon" href="icon.png">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="styles.css">
+<script src="scripts.js"></script>
+
+</head>
+
+<body>
+<div class="row m-0">
+
+<div class="col-md-6 pt-3 border border-secondary bg-dark text-white text-center">
+	<div class="bg-white rounded mx-auto" style="height:64px;width:64px;"></div>
+	<h1 class="display-3">Comapny Name</h1>
+	<p class="lead">smaller text about the company</p>
+</div>
+
+<div class="col-md-6">
+	
+	<ul class="nav nav-tabs mt-3" role="tablist">
+		<li class="nav-item">
+			<a class="nav-link text-secondary active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true"><i class="fas fa-sign-in-alt"></i> Log in</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link text-secondary" id="signup-tab" data-toggle="tab" href="#signup" role="tab" aria-controls="signup" aria-selected="false"><i class="fas fa-user-plus"></i> Sign up</a>
+		</li>
+	</ul>
+	<br>
+	<div class="tab-content">
+		<div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+			<form class="p-2 m-2">
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<span id="login-email-prepend" class="input-group-text">
+							<i class="fas fa-envelope"></i>
+						</span>
+					</div>
+					<input autofocus id="login-email-input" class="form-control" type="email" placeholder="Email" aria-describedby="login-email-prepend" required>
+					<div class="invalid-feedback">
+						Please enter your email.
+					</div>
+				</div>
+				<br>
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<span id="login-password-prepend" class="input-group-text">
+							<i class="fas fa-key"></i>
+						</span>
+					</div>
+					<input id="login-password-input" class="form-control" type="password" placeholder="Password" aria-describedby="login-password-prepend" required>
+					<div class="invalid-feedback">
+						Invalid password.
+					</div>
+				</div>
+				<br>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="remember-me-checkbox">
+					<label class="custom-control-label" for="remember-me-checkbox">Remember me</label>
+				</div>
+				<br>
+				<button class="btn btn-outline-primary btn-block"><i class="fas fa-sign-in-alt"></i> Log in</button>
+				<br>
+				<a href="">Forgot password?</a>
+			</form>
+		</div>
+
+		<div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+			<form class="p-2 m-2">
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<span id="signup-name-prepend" class="input-group-text">
+							<i class="fas fa-user"></i>
+						</span>
+					</div>
+					<input autofocus id="signup-name-input" class="form-control" type="text" placeholder="Name" aria-describedby="signup-name-prepend" required>
+					<div class="invalid-feedback">
+						Please enter your name.
+					</div>
+				</div>
+				<br>
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<span id="signup-email-prepend" class="input-group-text">
+							<i class="fas fa-envelope"></i>
+						</span>
+					</div>
+					<input autofocus id="signup-email-input" class="form-control" type="email" placeholder="Email" aria-describedby="signup-email-prepend" required>
+					<div class="invalid-feedback">
+						Please enter your email.
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="input-group col-sm-6 align-self-start">
+						<div class="input-group-prepend">
+							<span id="signup-password-prepend" class="input-group-text">
+								<i class="fas fa-key"></i>
+							</span>
+						</div>
+						<input id="signup-password-input" class="form-control" type="password" placeholder="Password" aria-describedby="signup-password-prepend" required>
+						<div class="invalid-feedback">
+							Password must be at least 8 characters and have a letter, number, and special character.
+						</div>
+					</div>
+					<div class="col-12 d-sm-none"><br></div>
+					<div class="input-group col-sm-6 align-self-start">
+						<div class="input-group-prepend">
+							<span id="signup-password-confirm-prepend" class="input-group-text">
+								<i class="fas fa-key"></i>
+							</span>
+						</div>
+						<input id="signup-password-confirm-input" class="form-control" type="password" placeholder="Confirm Password" aria-describedby="signup-password-confirm-prepend" required>
+						<div class="invalid-feedback">
+							Passwords do not match.
+						</div>
+					</div>
+				</div>
+				<br>
+				<button class="btn btn-outline-primary btn-block"><i class="fas fa-user-plus"></i> Sign up</button>
+				<br>
+				<p>By signing up you agree to our <a href="">terms of use</a></p>
+			</form>
+		</div>
+	</div>
+
+</div>
+
+</div>
+</body>
+</html>
