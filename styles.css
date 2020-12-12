@@ -26,8 +26,16 @@ html, body {
 	height: 100%;
 }
 
+* {
+	border-width: 2px !important;
+}
+
 .row {
 	min-height: 100%;
+}
+
+a {
+	color: #9299a0 !important;
 }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
