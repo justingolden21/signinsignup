@@ -24,6 +24,17 @@ $( ()=> {
 		}
 	});
 
+	// ======== Caps Lock Warning ========
+
+// signup-password-input
+// signup-password-confirm-input
+
+	$('#signup input[type=password]').keyup( (evt)=>{
+		console.log(evt);
+		console.log(evt.originalEvent.getModifierState);
+		$('#caps-text').css('display', evt.originalEvent.getModifierState('CapsLock') ? 'block' : 'none');
+	});
+
 	// ======== Validation ========
 
 	// 8 chararcters, 1 letter, 1 number, 1 special
