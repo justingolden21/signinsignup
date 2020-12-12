@@ -29,6 +29,10 @@ html, body {
 * {
 	border-width: 2px !important;
 }
+.nav-link {
+	margin-right: 0.25rem;
+	border-bottom-width: 0px !important;
+}
 
 .row {
 	min-height: 100%;
@@ -41,4 +45,19 @@ a {
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
 .custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
 	background-color: #343A40 !important;
+}
+
+.custom-checkbox .custom-control-label::before {
+	border-radius: 0px;
+	border-width: 2px;
+}
+
+
+.display-3 {
+	font-size: 3.5rem;
+}
+@media (min-width: 768px) {
+	.display-3 {
+		font-size: 4.5rem;
+	}
 }
