@@ -15,11 +15,11 @@ img, button, br, .nav-link {
 }
 
 ::-moz-selection {
-	background: #e9ecef; /* input-group background-color */
+	background: #E9ECEF;
 }
 
 ::selection {
-	background: #e9ecef; /* input-group background-color */
+	background: #E9ECEF;
 }
 
 html, body {
@@ -28,4 +28,9 @@ html, body {
 
 .row {
 	min-height: 100%;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+	background-color: #343A40 !important;
 }

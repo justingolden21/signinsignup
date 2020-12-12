@@ -1,8 +1,28 @@
 $( ()=> {
 	// ======== Focus Inputs ========
 
-	$('#login-tab').click( ()=> setTimeout( ()=> $('#login-email-input').focus(), 200) );
-	$('#signup-tab').click( ()=> setTimeout( ()=> $('#signup-name-input').focus(), 200) );
+	$('#login-tab').click( ()=> {
+		setTimeout( ()=> $('#login-email-input').focus(), 200);
+		document.title = 'Log In | Company Name';
+	});
+
+	$('#signup-tab').click( ()=> {
+		setTimeout( ()=> $('#signup-name-input').focus(), 200);
+		document.title = 'Sign Up | Company Name';
+	});
+
+
+	// ======== Show / Hide Password ========
+
+	$('#toggle-password-btn').click( ()=> {
+		if($('#toggle-password-btn').html().indexOf('eye-slash') !=  -1) {
+			$('#toggle-password-btn').html('<i class="fas fa-eye"></i>');
+			$('#login-password-input').attr('type', 'password');
+		} else {
+			$('#toggle-password-btn').html('<i class="fas fa-eye-slash"></i>');
+			$('#login-password-input').attr('type', 'text');
+		}
+	});
 
 	// ======== Validation ========
 
